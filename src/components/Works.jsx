@@ -22,7 +22,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
   };
 
   const onEnter = (eventType) => {
-    setScale(1.15)
+    setScale(1.10)
 
   };
 
@@ -36,7 +36,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
   return (
     <motion.div>
 
-      <Tilt className="w-full" reset={true} scale={scale} transitionSpeed={2500} gyroscope={true} glareEnable={true} glareMaxOpacity={0.9} glareColor="lightblue" glarePosition="all" glareBorderRadius="20px" onMove={onMove}
+      <Tilt className="w-full" reset={true} scale={scale} transitionSpeed={2500} glareEnable={true} glareMaxOpacity={0.9} glareColor="lightblue" glarePosition="all" glareBorderRadius="20px" onMove={onMove}
         onEnter={onEnter}
         onLeave={onLeave}>
         <motion.div

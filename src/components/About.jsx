@@ -23,7 +23,7 @@ const ServicesCard = ({ index, title, icon }) => {
   };
 
   const onEnter = (eventType) => {
-    setScale(1.15)
+    setScale(1.10)
 
   };
 
@@ -32,10 +32,11 @@ const ServicesCard = ({ index, title, icon }) => {
   };
   console.log('TITLE =>', title)
 
+
   // variants={fadeIn("right", "spring", 0.5 * index, 0.5)}
   // variants={fadeIn("", "", 0.1, 1)}
   return (
-    <Tilt className="xs:w-[250px] w-full" reset={true} scale={scale} transitionSpeed={2500} gyroscope={true} glareEnable={true} glareMaxOpacity={0.9} glareColor="lightblue" glarePosition="all" glareBorderRadius="20px" onMove={onMove}
+    <Tilt className="xs:w-[250px] w-full" reset={true} scale={scale} transitionSpeed={2500} glareEnable={true} glareMaxOpacity={0.9} glareColor="lightblue" glarePosition="all" glareBorderRadius="20px" onMove={onMove}
       onEnter={onEnter}
       onLeave={onLeave}>
       <motion.div

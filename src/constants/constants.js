@@ -82,15 +82,7 @@ const services = [
   },
 ];
 
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
+const expertise = [
   {
     name: "JavaScript",
     icon: javascript,
@@ -106,6 +98,17 @@ const technologies = [
   {
     name: "Java",
     icon: java,
+  },
+]
+
+const technologies = [
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
   },
   {
     name: "Ruby",
@@ -353,4 +356,4 @@ const socialProfiles = [
   }
 ]
 
-export { services, technologies, experiences, testimonials, projects, codingProfiles, socialProfiles };
+export { services, technologies, experiences, testimonials, projects, codingProfiles, socialProfiles, expertise };

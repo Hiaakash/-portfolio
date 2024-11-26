@@ -37,7 +37,7 @@ const ProfileCard = ({ name, link, icon }) => {
   return (
     <motion.div>
 
-      <Tilt className="w-[250px]" reset={true} transitionSpeed={2500} gyroscope={true} glareEnable={true} glareMaxOpacity={0.9} glareColor="lightblue" glarePosition="all" glareBorderRadius="20px" onMove={onMove}
+      <Tilt className="w-[250px]" reset={true} transitionSpeed={2500} glareEnable={true} glareMaxOpacity={0.9} glareColor="lightblue" glarePosition="all" glareBorderRadius="20px" onMove={onMove}
         onEnter={onEnter}
         onLeave={onLeave}>
         <motion.div
